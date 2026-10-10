@@ -1,0 +1,17 @@
+[
+    {
+        "model":"hf_hub:SamAdamDay\/resnet18_cifar10",
+        "dataset":"CIFAR-10",
+        "seed":42,
+        "evaluation_images":1000,
+        "accuracy_percent":92.4,
+        "serialized_size_mib":42.7304182053,
+        "cpu_latency_ms_per_image":93.4844133047,
+        "benchmark_images":256,
+        "batch_size":32,
+        "device_for_accuracy":"cuda",
+        "device_for_latency":"CPU",
+        "pytorch_version":"2.11.0+cu130",
+        "torchvision_version":"0.26.0+cu130"
+    }
+]
