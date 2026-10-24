@@ -5,14 +5,24 @@
   "seed": 42,
   "evaluation_images": 1000,
   "accuracy_percent": 92.4,
-  "prediction_agreement_percent": 99.5,
-  "different_predictions": 5,
   "serialized_size_mib": 10.789027214050293,
-  "cpu_latency_ms_per_image": 63.96226485807214,
-  "cpu_latency_std_ms_per_image": 0.06014196814895937,
+  "cpu_latency_ms_per_image": 34.625959686197895,
+  "cpu_latency_mean_ms_per_image": 34.625959686197895,
+  "cpu_latency_median_ms_per_image": 34.450574031250625,
+  "cpu_latency_std_ms_per_image": 0.5971944090619024,
+  "cpu_latency_runs_ms_per_image": [
+    35.291208628905224,
+    34.450574031250625,
+    34.13609639843784
+  ],
   "benchmark_images": 256,
   "benchmark_batch_size": 32,
+  "warmup_batches": 2,
   "latency_repeats": 3,
-  "quantization_backend": "x86",
-  "pytorch_version": "2.11.0+cpu"
+  "prediction_agreement_percent": 99.5,
+  "different_predictions": 5,
+  "device_for_accuracy": "cpu",
+  "device_for_latency": "CPU",
+  "pytorch_version": "2.11.0+cpu",
+  "torchvision_version": "0.26.0+cpu"
 }
