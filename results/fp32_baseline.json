@@ -5,7 +5,7 @@
   "evaluation_images": 1000,
   "accuracy_percent": 92.4,
   "serialized_size_mib": 42.73041820526123,
-  "cpu_latency_ms_per_image": 66.80969326953168,
+  "cpu_latency_ms_per_image": 68.07286750390685,
   "benchmark_images": 256,
   "batch_size": 25,
   "device_for_accuracy": "cuda",
