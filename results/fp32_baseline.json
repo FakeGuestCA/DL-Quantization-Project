@@ -6,14 +6,14 @@
   "evaluation_images": 1000,
   "accuracy_percent": 92.4,
   "serialized_size_mib": 42.72895336151123,
-  "cpu_latency_ms_per_image": 82.80606647656204,
-  "cpu_latency_mean_ms_per_image": 82.80606647656204,
-  "cpu_latency_median_ms_per_image": 75.35196253515508,
-  "cpu_latency_std_ms_per_image": 13.917246832192456,
+  "cpu_latency_ms_per_image": 75.25546581901062,
+  "cpu_latency_mean_ms_per_image": 75.25546581901062,
+  "cpu_latency_median_ms_per_image": 74.2738209804692,
+  "cpu_latency_std_ms_per_image": 1.9901453855390125,
   "cpu_latency_runs_ms_per_image": [
-    75.35196253515508,
-    74.20360060546827,
-    98.86263628906278
+    73.9468553515623,
+    77.54572112500036,
+    74.2738209804692
   ],
   "benchmark_images": 256,
   "benchmark_batch_size": 32,
@@ -21,6 +21,6 @@
   "latency_repeats": 3,
   "device_for_accuracy": "cuda",
   "device_for_latency": "CPU",
-  "pytorch_version": "2.11.0+cu130",
-  "torchvision_version": "0.26.0+cu130"
+  "pytorch_version": "2.14.1+cu130",
+  "torchvision_version": "0.29.1+cu130"
 }
