@@ -58,9 +58,21 @@ The following metrics are used for evaluation:
 
 The results indicate that INT* quantization maintained the baseline classification accuracy in the evaluated experiment. The changes in model size and inference latency are used to assess the resource-efficiency benefits of quantization.
 
-**Note: THe complete experimental results, including additional recorded measurements, are available in the `results/` directory.**
+**Note: The complete experimental results, including additional recorded measurements, are available in the `results/` directory.**
 
 # 7. Running the Experiments
+
+The experiments were developed using Jupter notebooks and can be run using Google Colab.
+
+1. Clone or download this repository.
+2. Open the `notebooks/` directory.
+3. Upload the notebooks to Google Colab or open them in a compatible Jupter environment.
+4. Select an appropriate runtime. A GPU runtime is used for consistency with the original experiments, although inference latency is measured on the CPU.
+5. Execute the notebook cells in order.
+
+The FP32 baseline notebook evaluates the original model, while the INT8 PTQ notebook performs quantization and evaluates the resulting model.
+
+**Note: The notebooks may require additional package installation or environment configurations before execution. Refer to the setup instructions within each notebook.**
 
 # 8. Conclusion
 
