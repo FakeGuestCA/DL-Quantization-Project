@@ -77,3 +77,5 @@ The FP32 baseline notebook evaluates the original model, while the INT8 PTQ note
 # 8. Conclusion
 
 # 9. Future Work
+
+Future work could investigate full test-set evaluation, lower-bit quantization (e.g. INT4), quantization-aware training (QAT), and deployment on actual embedded edge devices.
