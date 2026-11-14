@@ -10,8 +10,8 @@ Using a ResNet-18 image classification model trained on the CIFAR-10 dataset, th
 The primary objective is to determine whether quantization can reduce model resource requirements while maintaing classification accuracy.
 
 # 2. Objectives
-1. Establish a baseline using the original FP32 ResNet-18.
-2. Apply INT8 post-training quantization.
+1. Establish a baseline using the original FP32 ResNet-18 model.
+2. Apply INT8 post-training quantization to reduce model size and computational requirements.
 3. Compare the FP32 and INT8 models using classification accuracy, serialized model size, and inference latency. 
 4. Evaluate the effectiveness and limitations of PTQ for resource-constrained deployment.
 
