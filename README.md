@@ -3,7 +3,11 @@
 Group member(s): Trevor Wu (79013249)
 
 # 1. Project Overview
-This project investigates
+This project investigates the effects of post-training quantization (PTQ) on deep learning model performance, focusing on resource-constrained inference.
+
+Using a ResNet-18 image classification model trained on the CIFAR-10 dataset, the project evaluates the trade-offs between model accuracy, model size, and inference latency when converting a full-precision (FP32) model to an 8-bit integer (INT8) quantized model.
+
+The primary objective is to determine whether quantization can reduce model resource requirements while maintaing classification accuracy.
 
 # 2. Objectives
 1. Establish a baseline using the original FP32 ResNet-18.
