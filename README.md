@@ -30,7 +30,14 @@ The primary objective is to determine whether quantization can reduce model reso
 |Evaluation images|1,000|
 |Random seed|42|
 
+Note that the pretrained ResNet-18 model is obtained from Hugging Face and evaluated using the CIFAR-10 dataset.
+
 # 4. Directory Description
+
+1. `notebooks/`: Contains the Jupter notebooks for the FP32 baseline evaluation and INT8 post-training quantization experiments.
+2. `results/`: Contains the JSON files storing the experimental results for each model.
+3. `CMPE 401 Self-defined Project Technical Report`: Documents the project methodology, experimental results, and analysis.
+4. `CMPE 401 Self-defined Project Video`: Provides a brief overview of the project, apporach, results, and conclusions.
 
 # 5. Experimental Results
 
