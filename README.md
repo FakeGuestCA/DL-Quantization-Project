@@ -14,7 +14,7 @@ The primary objective is to determine whether quantization can reduce model reso
 
 1. Establish a baseline using the original FP32 ResNet-18 model.
 2. Apply INT8 post-training quantization to reduce model size and computational requirements.
-3. Compare the FP32 and INT8 models using classification accuracy, serialized model size, and inference latency. 
+3. Compare the FP32 and INT8 models using classification accuracy, serialized model size, and CPU inference latency. 
 4. Evaluate the effectiveness and limitations of PTQ for resource-constrained deployment.
 
 # 3. Model and Dataset
@@ -41,7 +41,24 @@ Note that the pretrained ResNet-18 model is obtained from Hugging Face and evalu
 
 # 5. Experimental Results
 
+The experiments compare the original FP32 model against the INT8 quantized model.
+
+The following metrics are used for evaluation:
+1. Accuracy: Classification accuracy on the CIFAR-10 evaluation subset.
+2. Model Size: Storage size of the model.
+3. Inference Latency: Average time needed to process an image during inference.
+
 # 6. Results Summary
+
+|Metric|FP32 Baseline|INT8 PTQ|
+|--|--|--|
+|Accuracy|92.40%|92.40%|
+|Model Size|42.729 MiB|10.789 MiB|
+|CPU Inference Latency|75.255 ms/image|43.433 ms/image|
+
+The results indicate that INT* quantization maintained the baseline classification accuracy in the evaluated experiment. The changes in model size and inference latency are used to assess the resource-efficiency benefits of quantization.
+
+**Note: THe complete experimental results, including additional recorded measurements, are available in the `results/` directory.**
 
 # 7. Running the Experiments
 
