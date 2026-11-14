@@ -8,7 +8,7 @@ This project investigates the effects of post-training quantization (PTQ) on dee
 
 Using a ResNet-18 image classification model trained on the CIFAR-10 dataset, the project evaluates the trade-offs between model accuracy, model size, and inference latency when converting a full-precision (FP32) model to an 8-bit integer (INT8) quantized model.
 
-The primary objective is to determine whether quantization can reduce model resource requirements while maintaing classification accuracy.
+The primary objective is to determine whether quantization can reduce model resource requirements while maintaining classification accuracy.
 
 # 2. Objectives
 
@@ -22,7 +22,7 @@ The primary objective is to determine whether quantization can reduce model reso
 |Component|Description|
 |--|--|
 |Model architecture|ResNet-18|
-|Pretrained model|SamAdamDay/resnet18_cifar10|
+|Pretrained model|`SamAdamDay/resnet18_cifar10`|
 |Dataset|CIFAR-10|
 |Task|Image classification|
 |Baseline precision|FP32|
@@ -34,10 +34,10 @@ Note that the pretrained ResNet-18 model is obtained from Hugging Face and evalu
 
 # 4. Directory Description
 
-1. `notebooks/`: Contains the Jupter notebooks for the FP32 baseline evaluation and INT8 post-training quantization experiments.
+1. `notebooks/`: Contains the Jupyter notebooks for the FP32 baseline evaluation and INT8 post-training quantization experiments.
 2. `results/`: Contains the JSON files storing the experimental results for each model.
 3. `CMPE 401 Self-defined Project Technical Report`: Documents the project methodology, experimental results, and analysis.
-4. `CMPE 401 Self-defined Project Video`: Provides a brief overview of the project, apporach, results, and conclusions.
+4. `CMPE 401 Self-defined Project Video`: Provides a brief overview of the project, approach, results, and conclusions.
 
 # 5. Experimental Results
 
@@ -56,17 +56,17 @@ The following metrics are used for evaluation:
 |Model Size|42.729 MiB|10.789 MiB|
 |CPU Inference Latency|75.255 ms/image|43.433 ms/image|
 
-The results indicate that INT* quantization maintained the baseline classification accuracy in the evaluated experiment. The changes in model size and inference latency are used to assess the resource-efficiency benefits of quantization.
+The results indicate that INT8 quantization maintained the baseline classification accuracy in the evaluated experiment. The changes in model size and inference latency are used to assess the resource-efficiency benefits of quantization.
 
 **Note: The complete experimental results, including additional recorded measurements, are available in the `results/` directory.**
 
 # 7. Running the Experiments
 
-The experiments were developed using Jupter notebooks and can be run using Google Colab.
+The experiments were developed using Jupyter notebooks and can be run using Google Colab.
 
 1. Clone or download this repository.
 2. Open the `notebooks/` directory.
-3. Upload the notebooks to Google Colab or open them in a compatible Jupter environment.
+3. Upload the notebooks to Google Colab or open them in a compatible Jupyter environment.
 4. Select an appropriate runtime. A GPU runtime is used for consistency with the original experiments, although inference latency is measured on the CPU.
 5. Execute the notebook cells in order.
 
