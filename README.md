@@ -76,6 +76,10 @@ The FP32 baseline notebook evaluates the original model, while the INT8 PTQ note
 
 # 8. Conclusion
 
+This project demonstrates the application of post-training quantization to a ResNet-18 image classification model. By comparing FP32 and INT8 inference, the experiments investigate the balance between model accuracy and computational efficiency.
+
+The findings and detailed discussion of the experimental methodology, results, and limitations are provided in the technical report.
+
 # 9. Future Work
 
 Future work could investigate full test-set evaluation, lower-bit quantization (e.g. INT4), quantization-aware training (QAT), and deployment on actual embedded edge devices.
